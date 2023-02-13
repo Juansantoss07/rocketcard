@@ -20,10 +20,10 @@
                         <img src="./assets/imgs/logo.svg" alt="">
                         <p id="title_user"></p>
                     </header>
-                    <div class="img-profile">
+                    <div class="img-profile" id="imgProfile">
                         <img  id="img_profile" src="" alt="">
                     </div>
-                    <div class="infos">
+                    <div class="infos" id="infos">
                         <div class="item">
                             <img src="./assets/imgs/following.svg" alt="">
                             <p id="following"></p>
@@ -50,6 +50,18 @@
             </div>
             <div class="button">
                 <button id="btnChangeBg" onclick="changeBackground()">Gerar background</button>
+            </div>
+            <div class="search-user">
+                <input type="search" placeholder="Pesquise um usuário..." id="searchUser">
+                <button onclick="getUser(searchUser.value)" id="btnSearch">
+                    Procure
+                </button>
+            </div>
+            <div class="modal" id="modal">
+                <p>Usuário não existe</p>
+                <button class="btn-modal" onclick="closeModal()">
+                    Ok
+                </button>
             </div>
         </div>
     </div>

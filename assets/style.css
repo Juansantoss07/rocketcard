@@ -5,6 +5,8 @@
   --img-profile: #8257e5;
   --buttons: #FFF;
   --border-button: #1A1A1A;
+  --background-modal:#000000cd;
+  --img-profile-hover:#5e3fa7;
 }
 
 *{
@@ -107,6 +109,7 @@
     position: relative;
     top: -70px;
     left: 20px;
+    opacity: 0;
 }
 
 .infos .item{
@@ -130,6 +133,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    opacity: 0;
 }
 
 .right{
@@ -153,3 +157,62 @@
     border: 1px solid var(--border-button);
 }
 
+.search-user{
+    margin-top:4rem;
+    display: flex;
+}
+
+input[type='search']{
+    outline: none;
+    padding: .5rem;
+    border-radius: 10px 0 0 10px;
+    border: 5px solid var(--img-profile);
+}
+
+#btnSearch{
+    padding: .5rem;
+    outline: none;
+    border: 5px solid var(--img-profile);
+    border-radius: 0 10px 10px 0;
+    background: var(--img-profile);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--buttons);
+}
+
+.modal{
+    background: var(--background-modal);
+    padding: 1rem;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    position: fixed;
+    width: 40%;
+    right: 10%;
+    height: 50%;
+    backdrop-filter: blur(12px);
+    display: none;
+}
+
+.modal p{
+    font-size: 40px;
+}
+
+.modal .btn-modal{
+    padding: .5rem 2rem;
+    outline: none;
+    border: 5px solid var(--img-profile);
+    border-radius: 10px;
+    background: var(--img-profile);
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--buttons);
+    margin-top: 2rem;
+}
+
+.modal .btn-modal:hover{
+    background: var(--img-profile-hover);
+}
