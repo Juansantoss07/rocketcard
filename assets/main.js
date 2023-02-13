@@ -7,11 +7,11 @@ let searchUser = document.getElementById('searchUser')
 
 // Função para enviar evento do input através do botão Enter
 function keyUper(){
-    searchUser.addEventListener('keydown', (event) =>{
+    searchUser.addEventListener('keyup', (event) =>{
         if (event.key === 'Enter') {
             event.preventDefault();
              document.getElementById("btnSearch").click();
-             searchUser.value = ''
+             searchUser.value = '' //Zerando valor do input
         }
     })
 }
@@ -27,6 +27,7 @@ function getUser(user){
                 infos.style.opacity = '0'
                 imgProfile.style.opacity = '0'
                 modal.style.display = 'flex'
+                title_user.textContent = ''
             }else{
                 infos.style.opacity = '1'
                 imgProfile.style.opacity = '1'
