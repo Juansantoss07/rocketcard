@@ -45,10 +45,8 @@
 }
 
 .box-card{
-    min-width: 60%;
-    min-height: 80%;
-    max-width: 693px;
-    max-width: 438px;
+    width: 392px;
+    height: 592px;
     background: var(--bg);
     margin-top: 40px;
     border-radius: 50px;
@@ -215,4 +213,23 @@ input[type='search']{
 
 .modal .btn-modal:hover{
     background: var(--img-profile-hover);
+}
+
+/* Responsives */
+@media(max-width:830px){
+    .container{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .left,
+    .right{
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .box-card{
+        width: 90%;
+    }
 }
