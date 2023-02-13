@@ -38,6 +38,8 @@ function getUser(user){
                 followers.textContent = `Seguidores: ${data.followers}`
                 public_repos.textContent = `Repositórios: ${data.public_repos}`
                 locations.textContent = `Localidade: ${data.location}`
+
+                changeBackground()
             }
     })
     .catch(error => console.error(error));
