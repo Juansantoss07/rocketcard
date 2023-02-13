@@ -11,7 +11,6 @@ function keyUper(){
         if (event.key === 'Enter') {
             event.preventDefault();
              document.getElementById("btnSearch").click();
-             searchUser.value = '' //Zerando valor do input
         }
     })
 }
@@ -28,7 +27,9 @@ function getUser(user){
                 imgProfile.style.opacity = '0'
                 modal.style.display = 'flex'
                 title_user.textContent = ''
+                searchUser.value = '' //Zerando valor do input
             }else{
+                searchUser.value = '' //Zerando valor do input
                 infos.style.opacity = '1'
                 imgProfile.style.opacity = '1'
                 title_user.textContent = data.login

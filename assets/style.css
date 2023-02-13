@@ -49,7 +49,7 @@
 .box-card{
     width: 392px;
     height: 592px;
-    background: var(--background-modal);
+    background: var(--bg-card);
     margin-top: 40px;
     border-radius: 50px;
     display: flex;
@@ -58,7 +58,7 @@
 }
 
 .card{
-    background: var(--bg-cad);
+    background: var(--background-modal);
     height: 95%;
     width: 95%;
     border-radius: 50px;
