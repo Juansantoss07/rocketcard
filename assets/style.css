@@ -22,7 +22,9 @@
     display: flex;
     align-items: initial;
     justify-content: center;
-    background: var(--bg-card);
+    background-image: url('https://images.pexels.com/photos/15262554/pexels-photo-15262554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-size: cover;
 }
 
 .text p{
@@ -47,7 +49,7 @@
 .box-card{
     width: 392px;
     height: 592px;
-    background: var(--bg);
+    background: var(--background-modal);
     margin-top: 40px;
     border-radius: 50px;
     display: flex;
@@ -56,10 +58,11 @@
 }
 
 .card{
-    background: var(--bg-card);
+    background: var(--bg-cad);
     height: 95%;
     width: 95%;
     border-radius: 50px;
+    backdrop-filter: blur();
 }
 
 .header-card{
