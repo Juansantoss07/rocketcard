@@ -14,7 +14,7 @@
             <div class="text">
                 <p>Compartilhe seu #rocketcard</p>
             </div>
-            <div class="box-card">
+            <div class="box-card" id="backCard">
                 <div class="card">
                     <header class="header-card">
                         <img src="./assets/imgs/logo.svg" alt="">
@@ -24,10 +24,22 @@
                         <img  id="img_profile" src="" alt="">
                     </div>
                     <div class="infos">
-                        <div class="following" id="following"></div>
-                        <div class="followers" id="followers"></div>
-                        <div class="public_repos" id="public_repos"></div>
-                        <div class="location" id="locations"></div>
+                        <div class="item">
+                            <img src="./assets/imgs/following.svg" alt="">
+                            <p id="following"></p>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/imgs/followers.svg" alt="">
+                            <p id="followers"></p>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/imgs/repository.svg" alt="">
+                            <p id="public_repos"></p>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/imgs/location.svg" alt="">
+                            <p id="locations"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -37,7 +49,7 @@
                 <p>Customizar RocketCard</p>
             </div>
             <div class="button">
-                <button>Gerar background</button>
+                <button id="btnChangeBg" onclick="changeBackground()">Gerar background</button>
             </div>
         </div>
     </div>

@@ -14,4 +14,13 @@ function getUser(id){
     .catch(error => console.error(error));
 }
 
-getUser("juansantoss07");
+getUser("facebook");
+
+function changeBackground(){
+    let backCard = document.getElementById('backCard')
+    let colors = ['blue', 'green', 'red', 'white', 'brown', 'yellow', 'purple', 'black']
+    cor = 0
+    cor = Math.floor(Math.random() * (colors.length + 1));
+
+    backCard.style.backgroundColor = colors[cor];
+}   

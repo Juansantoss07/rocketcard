@@ -87,7 +87,7 @@
     border-radius: 300px;
     min-width: 65%;
     right: 20px;
-    max-width: 352px;
+    max-width: 230px;
     max-height: 350.23px;
 }
 
@@ -107,6 +107,19 @@
     position: relative;
     top: -70px;
     left: 20px;
+}
+
+.infos .item{
+    display: flex;
+    font-weight: 400;
+}
+
+.infos .item:hover{
+    color: var(--img-profile);
+}
+
+.infos .item p{
+    margin-left: .8rem;
 }
 
 .infos div{
